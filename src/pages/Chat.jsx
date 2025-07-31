@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import axios from 'axios';
 import backgroundImage from '../PHOTO.png';
@@ -41,9 +42,11 @@ export default function Chat() {
     setError(null);
 
     try {
-      const res = await axios.post('https://gemini-ai-supportbackend.vercel.app/api/gemini/chat', {
+      const res = await axios.post(' https://gemini-ai-supportbackend.vercel.app/api/gemini/chat', {
         message: input,
       });
+      console.log(res);
+      
       const reply = { sender: 'ai', content: res.data.reply };
       setMessages((prev) => [...prev, reply]);
     } catch (err) {

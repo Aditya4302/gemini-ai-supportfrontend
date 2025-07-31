@@ -8,7 +8,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarOnRoutes = ['/', '/signup']; // Hide on Login and Signup
+  const hideNavbarOnRoutes = ['/', '/signup']; 
 
   const shouldShowNavbar = !hideNavbarOnRoutes.includes(location.pathname);
 
