@@ -42,7 +42,7 @@ export default function Chat() {
     setError(null);
 
     try {
-      const res = await axios.post('https://gemini-ai-supportbackend.vercel.app/api/gemini/chat', {
+      const res = await axios.post('https://gemini-backend-ivory.vercel.app/api/gemini/chat', {
         message: input,
       });
       console.log(res);

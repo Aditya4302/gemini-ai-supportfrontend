@@ -12,7 +12,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://gemini-ai-supportbackend.vercel.app/api/auth/signup', {
+      await axios.post('https://gemini-backend-ivory.vercel.app/api/auth/signup', {
         username,
         email,
         password,

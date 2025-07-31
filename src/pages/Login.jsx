@@ -15,7 +15,7 @@ function Login() {
     setErrorMessage('');
 
     try {
-      const { data } = await axios.post('https://gemini-ai-supportbackend.vercel.app/api/auth/login', {
+      const { data } = await axios.post('https://gemini-backend-ivory.vercel.app/api/auth/login', {
         email,
         password,
       });
